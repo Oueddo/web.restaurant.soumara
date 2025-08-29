@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mediaquery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site web</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Soumara</h1>
+        </div>
+
+        <nav class="menu">
+            <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#catalogue">Catalogue</a></li>
+            <li><a href="#gallerie">Gallerie</a></li>
+            <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <section id="hero">
+        <article class="bloc-text">
+            <h1>Savourez les Saveurs chez nous, à Soumara</h1>
+            <p>A l'Alimentation et Restaurant Soumara, vous pouvez  aussi faire du shopping Alimentaire</p>
+            <h2>Excellence savoureuse</h2>
+            <p>Découvrez le délicieux mélange de Cuisine</p>
+            <button>Commander maintenant</button>
+        </article>
+
+        <article class="bloc-image">
+            <img src="images/image11.jpg" alt="">
+        </article>
+    </section>
+
+
+    <section id="catalogue">
+        <h1>Catalogue des produits</h1>
+
+        <div class="ajout-produit">
+            <h3>Ajouter un produit</h3>
+            <input type="text" id="nomProduit" placeholder="Nom du produit">
+            <input type="number" id="prixProduit" placeholder="Prix">
+            <input type="text" id="categorieProduit" placeholder="Catégorie">
+            <input type="text" id="imageProduit" placeholder="URL de l'image">
+            <!-- <button class="ajout" onclick="ajouterProduit()">Ajouter</button>
+            <button class="ajout" id="modifierBtn" onclick="validerModification()" style="display:none;">Valider</button> -->
+            <button id="ajouterBtn" onclick="ajouterProduit()" class="ajout">Ajouter</button>
+            <button id="modifierBtn" onclick="validerModification()" class="ajout" class="ajout" style="display:none;">Valider</button>
+
+        </div>
+
+        <h1>Recherche un produit par son prix et Catégorie</h1>
+        <div class="filtres">
+            <label>
+            Prix maximum :
+            <input type="number" id="filtrePrix" placeholder="ex: 20000">
+            </label>
+
+            <label>
+            Catégorie :
+            <select id="filtreCategorie">
+                <option value="">Toutes</option>
+                <option value="plat">Plat de nouriture</option>
+                <option value="boison">Rafraichissement</option>
+                <option value="fruit">Fruit</option>
+            </select>
+            </label>
+            <button id="boutonFiltrer">Réchercher</button>
+        </div>
+
+        <div id="listeProduits"></div>
+    </section>
+
+    <section id="gallerie">
+        <h1>Gallerie</h1>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                    <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+            <div class="desc">Description</div>
+        </div>
+
+         <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                     <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                    <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                    <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                    <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                    <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                    <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+            <div class="desc">Description</div>
+        </div>
+
+        <div class="responsive">
+            <div class="gallery">
+                <a target="_blank" href="#">
+                    <img src="images/image110.jpg" alt="Cinque Terre">
+                </a>
+            </div>
+           <div class="desc">Description</div>
+        </div>
+
+        <div class="clearfix"></div>
+
+    </section>
+
+    <section id="contact">
+        <h1>Contact</h1>
+        <div class="container">
+            <h1>Contactez-nous!</h1>
+            <form action="">
+                <label for="fname">Nom</label>
+                <input type="text" id="fname" name="firstname" placeholder="Votre nom..">
+
+                <label for="lname">Prénom</label>
+                <input type="text" id="lname" name="lastname" placeholder="Votre prénom..">
+
+                <label for="country">Email</label>
+                <input type="email" id="email" name="lastname" placeholder="Votre prénom..">
+
+                <label for="subject">Message</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </section>
+
+    <footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>À propos</h4>
+      <p>Catalogue interactif.</p>
+    </div>
+
+    <div class="footer-section">
+      <h4>Liens utiles</h4>
+      <ul>
+        <li><a href="#catalogue">Catalogue</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#mentions">Mentions légales</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-section">
+      <h4>Suivez-nous</h4>
+      <div class="social-icons">
+        <a href="#"><img src="images/facebook.svg" alt="Facebook"></a>
+        <a href="#"><img src="images/twitter.svg" alt="Twitter"></a>
+        <a href="#"><img src="images/github.svg" alt="GitHub"></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025. Tous droits réservés.</p>
+  </div>
+</footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
